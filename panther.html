@@ -1,58 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>panther DeVille</title>
+    <title>Panther DeVille</title>
+    <style>
+        /*  Styles */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #c0d219;
+            text-align: center;
+        }
+        p, ul {
+            padding: 0 20px;
+            font-size: 1.1em;
+        }
+        a {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: auto;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+        hr {
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #444;
+            overflow: hidden;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
 </head>
-<a href="index.html">Inicio</a> | <a href="#panther J72"> Panther J72 </a> | <a href="#Panther Lima">  Panther Lima </a> | <a href="#Panther De Ville">Panther De Ville</a>
-<h1><b>Panther</b></h1> 
-<img src="https://upload.wikimedia.org/wikipedia/en/0/05/Panther_Westwinds.jpg" alt="Panther_Westwinds">
-<p>Fundada en 1972 por <b>Robert Jankel</b>, la empresa Panther fabricó inicialmente coches de estilo retro basados en los componentes mecánicos de coches de producción estándar de otros fabricantes.</p>
 
 <body>
-    <div>
-        <h2 id="panther J72">Panther J72</h2>
-        <li><b>Fabricante:</b> Pantera Westwinds Ltd.</li>
-        <li><b>Período:</b> 1972-1981</li>
-        <li><b>Unidades Producidas:</b> 368 producidos.</li>
-        <li><b>Fábricas:</b> Weybridge , Inglaterra</li><br>
-        <img width="600px" src="Panther_J72_of_1972.JPG" alt="">
-        <p>El J.72 fue un roadster de lujo ultra exclusivo, el primer vehículo de producción de la empresa Panther Westwinds. Diseñado para evocar al Jaguar SS100 y vendido entre 1972 y 1981, utilizaba mecánicas del Jaguar XJ, incluido su motor V12 de 5,3 L. También se ofreció con los motores XK de 3,8 L y 4,2 L de Jaguar.</p><br>
 
-        <p>El J.72 fue un éxito para la pequeña empresa, con su tapicería de cuero Connolly y carrocería de aluminio. El coche fue adquirido por una clientela famosa, entre la que se encontraban el comediante Redd Foxx, Freddy Mercury y Elizabeth Taylor. Se fabricaron un total de 368 unidades. Las primeras unidades se ensamblaron en el garaje de Michael Walker, en Woking. El chasis fue suministrado por Geoff Jago, cerca de Chichester. Los motores y las cajas de cambios procedían de Forward Engineering, Coventry. El chasis se construyó y luego se envió a otro lugar para que le colocaran la carrocería, se devolvió para que le colocaran el motor y luego se envió a los recortadores para que hicieran el interior y el capó. El trabajo final y la puesta en marcha se llevaron a cabo en Michael Walkers, en Woking, incluidas pruebas de conducción por las carreteras rurales locales.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/q8xtBZBoGvc?si=-6AQbvMgeY4RLJgD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Navigation bar -->
+    <header>
+        <h1>Panther Westwinds   </h1>
+        <div class="navbar">
+            <a href="index.html">Inicio</a> | 
+            <a href="#pantherJ72">Panther J72</a> | 
+            <a href="#PantherLima">Panther Lima</a> | 
+            <a href="#PantherDeVille">Panther De Ville</a>
+        </div>
+    </header>
+<br>
+    <!-- Main Content -->
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Panther_Westwinds.jpg/300px-Panther_Westwinds.jpg" alt="Panther Westwinds">
+
+    <p>Fundada en 1972 por <b>Robert Jankel</b>, la empresa Panther fabricó inicialmente coches de estilo retro basados en componentes mecánicos de otros fabricantes.</p>
+
+    <!-- Panther J72 Section -->
+    <div>
+        <h2 id="pantherJ72">Panther J72</h2>
+        <ul>
+            <li><b>Fabricante:</b> Panther Westwinds Ltd.</li>
+            <li><b>Período:</b> 1972-1981</li>
+            <li><b>Unidades Producidas:</b> 368</li>
+            <li><b>Fábricas:</b> Weybridge, Inglaterra</li>
+        </ul>
+        <img src="Panther_J72_of_1972.JPG" alt="Panther J72">
+        <p>El J.72 fue un roadster de lujo que evocaba el Jaguar SS100, fabricado entre 1972 y 1981. Utilizaba motores Jaguar V12 de 5,3 L y motores XK de 3,8 L y 4,2 L.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q8xtBZBoGvc?si=-6AQbvMgeY4RLJgD" title="YouTube video player" allowfullscreen></iframe>
     </div>
 
+    <!-- Panther Lima Section -->
     <div>
-        <h3 id="Panther Lima">Panther Lima</h3>
-        <li><b>Fabricante:</b> Panther Westwinds</li>
-        <li><b>Período:</b> 1976-1982</li>
-        <li><b>Unidades Producidas:</b> 500 unidades</li>
-        <li><b>Motor:</b> Opel l4 de 2279cc. Vauxhall l4 turboalimentado de 2279 cc</li>
-        <br>
-        <img class="Imagen" src="panther Lima.jpg" alt=""><br>
-        <p>El Panther Lima fue un roadster de estilo retro de la década de 1970 construido por Panther Westwinds . Utilizaba mecánicas Vauxhall Viva y Magnum , incluido el motor de 2,3L (2279 cc) de ese automóvil. El modelo Mark II posterior utilizó un chasis construido especialmente. La carrocería estaba construida de fibra de vidrio en un estilo roadster que recordaba a un Allard o Morgan . Las carrocerías de fibra de vidrio fueron fabricadas por Industrial Marine Fibreglass con sede en Newton Abbot, Devon. Para los estándares de los fabricantes a pequeña escala, el Lima se produjo en serie, con más de 500 construidos en el momento de la introducción del Lima Turbo en febrero de 1979. </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3lbibMrRBPw?si=GYvLJYUQN7PkX6Ap" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 id="PantherLima">Panther Lima</h3>
+        <ul>
+            <li><b>Fabricante:</b> Panther Westwinds</li>
+            <li><b>Período:</b> 1976-1982</li>
+            <li><b>Unidades Producidas:</b> 500</li>
+            <li><b>Motor:</b> Opel l4 de 2279cc, Vauxhall l4 turboalimentado</li>
+        </ul>
+
+        <img src="panther Lima.jpg" alt="Panther Lima">
+        <p>El Panther Lima fue un roadster retro construido por Panther Westwinds en la década de 1970. Utilizaba mecánicas de Vauxhall Viva y Magnum, con un motor de 2,3L.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3lbibMrRBPw?si=GYvLJYUQN7PkX6Ap" title="YouTube video player" allowfullscreen></iframe>
     </div>
 
+    <!-- Panther De Ville Section -->
     <div>
-        <h3 id="Panther De Ville">Panther De Ville</h3>
-        <li><b>Fabricante:</b>	Panther Westwinds Ltd</li>
-        <li><b>Período:</b>	1974 - 1985</li>
-        <li><b>Motor:</b> Jaguar XK6 4.2 L. Jaguar V12 5.3 L</li>
-        <li><b>Fábricas:</b> Weybridge, Inglaterra</li>
-        <li><b>Unidades Producidas:</b> 60 Unidades</li > <br><img width="600px" src="panther-DeVille.jpg" alt="panther-DeVille" >
-        <p> El Panther De Ville es un vehículo de lujo neoclásico producido por el fabricante británico Panther Westwinds, de 1974 a 1985. El De Ville fue concebido por Robert Jankel basado en los diseños de la década de 1930 para atraer al gusto de los nuevos clientes ricos, incluidos el cantante Elton John y el actor Oliver Reed. El De Ville está claramente inspirado en el Bugatti T41 "Royale" Sin embargo, el De Ville no era una réplica precisa del original, sino una interpretación muy libre de este vehículo.</p>
-        <p>Alrededor de 60 ejemplares del De Ville fueron construidos a mano, incluidos once descapotables de dos puertas (durante muchos años, fue el automóvil de producción más caro de Gran Bretaña), y una limusina de seis puertas rosa y dorada. Actualmente está en Disney París la versión de 101 dálmatas (1996) y en Disneyland Resort, el coche usado en la película Cruella de 2021.</p>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/peQtp3FjdLY?si=hWJ7qcDzmK0T9ztL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 id="PantherDeVille">Panther De Ville</h3>
+        <ul>
+            <li><b>Fabricante:</b> Panther Westwinds Ltd.</li>
+            <li><b>Período:</b> 1974-1985</li>
+            <li><b>Motor:</b> Jaguar XK6 4.2 L, Jaguar V12 5.3 L</li>
+            <li><b>Unidades Producidas:</b> 60</li>
+        </ul>
+        <img src="panther-DeVille.jpg" alt="Panther DeVille">
+        <p>El Panther De Ville fue un vehículo de lujo inspirado en el Bugatti T41 "Royale", producido entre 1974 y 1985. Fue diseñado para atraer a una clientela rica y famosa, como Elton John y Oliver Reed.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/peQtp3FjdLY?si=hWJ7qcDzmK0T9ztL" title="YouTube video player" allowfullscreen></iframe>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <i>Creado por NIMH</i>
+    </footer>
 
 </body>
-<footer>
-    <hr>
-    <i>Creado por NIMH</i>
-    
-</footer>
 </html>

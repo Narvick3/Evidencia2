@@ -1,30 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford</title>
-</head>
-<a href="index.html">Inicio</a> | <a href="#Thunderbird">Thunderbird</a> | <a href="#Video">Video</a>
-<h1>Ford Motor Company</h1>
-<img width="500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/480px-Ford_logo_flat.svg.png" alt="">
-<body>
-    <p>Fundada por Henry Ford se incorporó el 16 de junio de 1903. La compañía vende automóviles y vehículos comerciales bajo la marca Ford y la mayoría de autos de lujo bajo la marca Lincoln. Ford también controla al fabricante brasileño de SUVs Troller y el australiano FPV. También ha fabricado tractores y demás componentes automotrices.</p>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
     
-</body>
-<div>
-    <h2 id="Thunderbird" tabindex="2">Ford Thunderbird</h2>
-    <ul>
-    <li><b>Fabricante:</b>	Ford Motor Company</li>
-    <li><b>Período:</b>	1955-1997</li>
-    <li><b>País:</b>	Estados Unidos</li>
-    <li><b>Motor:</b>	V8 Y-block de origen Mercury de 4.8L 292cc de 198 caballos.</li>
-    </ul>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/1956_Ford_Thunderbird_Blue.jpg/375px-1956_Ford_Thunderbird_Blue.jpg" alt="">
-    <p tabindex="entero">El Ford Thunderbird es un automóvil del segmento F fabricado en los Estados Unidos por la Ford Motor Company. El nombre del Ford Thunderbird proviene del folklore nativo estadounidense de Arizona y Nuevo México. Cuenta la mitología que el Thunderbird (Pájaro del trueno) gobernaba en el cielo y era el ayudante divino del hombre. Sus grandes alas batientes, invisibles para los mortales, originaban los vientos y los truenos, dando lugar a las tormentas del desierto que proporcionaban a los indígenas estadounidenses el agua para seguir viviendo en la sequedad en la que les había situado el destino en América del Norte.</p>
-    <iframe id="Video" width="560" height="315" src="https://www.youtube.com/embed/DLPicT9DYQM?si=qCXboJy-k--Gii5q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-<hr>
-<i>Desarrollada por Narvick Moreno</i>
+        header {
+            background-color: rgb(25, 25, 90);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            color: white;
+            text-align: center;
+        }
+        h2{
+            color: rgb(25, 25, 90);
+        }
+        p, ul {
+            padding: 0 20px;
+            font-size: 1.1em;
+        }
+        a {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: auto;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+        hr {
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        /* Navigation bar styles */
+        .navbar {
+            background-color: rgb(30, 30, 60);
+            overflow: hidden;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
 
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <h1>Ford Motor Company</h1>
+        <div class="navbar">
+            <a href="index.html">Inicio</a> | 
+            <a href="#Thunderbird">Thunderbird</a> | 
+            <a href="#Video">Video</a>
+        </div>
+    </header>
+    <br>
+    <!-- Main Content -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/480px-Ford_logo_flat.svg.png" alt="Ford Logo">
+
+    <p>Fundada por Henry Ford se incorporó el 16 de junio de 1903. La compañía vende automóviles y vehículos comerciales bajo la marca Ford y la mayoría de autos de lujo bajo la marca Lincoln. Ford también controla al fabricante brasileño de SUVs Troller y el australiano FPV. También ha fabricado tractores y demás componentes automotrices.</p>
+
+    <!-- Ford Thunderbird Section -->
+    <div>
+        <h2 id="Thunderbird">Ford Thunderbird</h2>
+        <ul>
+            <li><b>Fabricante:</b> Ford Motor Company</li>
+            <li><b>Período:</b> 1955-1997</li>
+            <li><b>País:</b> Estados Unidos</li>
+            <li><b>Motor:</b> V8 Y-block de origen Mercury de 4.8L 292cc de 198 caballos.</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/1956_Ford_Thunderbird_Blue.jpg/375px-1956_Ford_Thunderbird_Blue.jpg" alt="Ford Thunderbird">
+        <p>El Ford Thunderbird es un automóvil del segmento F fabricado en los Estados Unidos por la Ford Motor Company. El nombre del Ford Thunderbird proviene del folklore nativo estadounidense, donde el Thunderbird gobernaba el cielo, originando los vientos y las tormentas del desierto que proporcionaban agua vital a los pueblos indígenas.</p>
+    </div>
+
+    <!-- Video Section -->
+    <div id="Video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DLPicT9DYQM?si=qCXboJy-k--Gii5q" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p><i>Desarrollada por Narvick Moreno</i></p>
+    </footer>
+
+</body>
 </html>

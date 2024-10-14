@@ -1,65 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es  ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }   
+
+        /* Estilo del enlace de navegación */
+        a {
+            text-decoration: none;
+            color: #3498db;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+        }
+
+        /* Estilo del formulario */
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        /* Estilo del título del formulario */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Estilo del contenedor fieldset */
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+
+        /* Estilo de las etiquetas de los campos */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        /* Estilo de los campos de entrada */
+        input[type="text"], input[type="email"], input[type="color"], input[type="date"], input[type="file"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Estilo del selector */
+        select {
+            height: 40px;
+        }
+
+        /* Estilo para resaltar la sección de título */
+        mark {
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-<script src="app.js"></script>
-<a href="index.html">Inicio</a>
+
+    
 <body>
-    <form action="">
-        <fieldset >
+
+        <fieldset>
+            <br>
             <h1><mark>Formulario</mark></h1>
-
+           
+            <a href="index.html">Inicio</a>
+        <form action="">
+            
             <ol>
-               
-               <li><label for="nombre">Nombre</label>
-                <input type="nombre" id="nombre"><br></li>
-                <br>
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                </li>
+
+                <li>
+                    <label for="colorfav">Color Favorito</label>
+                    <input type="color" name="colorfav" id="">
+                </li>
+
+                <li>
+                    <label for="edad">¿Cuántos años tienes?</label>
+                    <input type="number" name="edad" id="edad">
+                </li>
+
+                <li>
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" name="fecha" id="fecha">
+                </li>
+
+                <li>
+                    <label for="archivo">Archivo</label>
+                    <input type="file" name="archivo" id="archivo">
+                </li>
+
+                <li>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo">
+                </li>
+
+                <li>
+                    <label for="curso">Marca Favorita</label>
+                    <select name="curso" id="curso">
+                        <option value="Panther">Panther</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Dodge">Dodge</option>
+                        <option value="Rolls Royce">Rolls Royce</option>
+                    </select>
+                </li>
                 
-                <br>
-                <li><label for="colorfav">Color Favorito</label>
-                <input type="color" name="colorfav" id=""><br> </li>
-                <br>
-
-                <br>
-                <li><label for="edad">Cuantos años tienes?</label>
-                <input type="number" name="edad" id="edad"><br> </li>
-                <br>
-
-                <br>
-                <li><label for="fecha">fecha Nacimiento</label>
-                <input type="date" name="fecha" id="fecha"><br></li>
-                <br>
-
-                <br>
-                <li><label for="archivo">archivo</label>
-                <input type="file" name="archivo" id="archivo"><br></li>
-                <br>
-
-                <br>
-
-                <li><label for="correo">correo</label>
-                <input type="email" name="correo" id="correo"><br></li>
-                <br>
-
-                <br>
-
-                <li><label for="curso">Marca Favorita</label>
-                <select  name="curso" id="curso">
-                    <option value="Panther">Panther</option>
-                    <option value="Ford">Ford</option>
-                    <option value="Dodge ">Dodge</option>
-                    <option value="Rolls Royce">Rolls Royce</option></li>
-            </select>
             </ol>
         </fieldset>
-    
     </form>
-
-    
 </body>
-
 </html>

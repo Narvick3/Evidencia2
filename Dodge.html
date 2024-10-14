@@ -4,30 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dodge</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+    
+        header {
+            background-color: #000000e8;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            color:red;
+            text-align: center;
+        }
+        p, ul {
+            padding: 0 20px;
+            font-size: 1.1em;
+        }
+        a {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: auto;
+        }
+        iframe, embed {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+        embed{
+            width: 1200%;
+            max-width: 1200px;
+            height: 460px;
+        }
+        hr {
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #090909;
+            overflow: hidden;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
 </head>
-<a href="index.html">Inicio</a> | <a href="#Charger">Charger</a> | <a href="#Durango">Catalogo Durango</a>
-<h1>Dodge</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Dodge_black_logo.svg/480px-Dodge_black_logo.svg.png" alt="">
-<p>Dodge es una marca estadounidense de automóviles y una división de Stellantis North America, con sede en Auburn Hills, Míchigan. La marca ha sido conocida por sus vehículos de alto rendimiento y una variedad de modelos a lo largo de los años, incluyendo clásicos como el Dodge Charger y el Dodge Challenger.</p>
-
 <body>
+
+    <!-- Navigation bar -->
+    <header>
+        <h1>Dodge Motor Company</h1>
+        <div class="navbar">
+            <a href="index.html">Inicio</a> | 
+            <a href="#Charger">Charger</a> | 
+            <a href="#Durango">Catálogo Durango</a>
+        </div>
+    </header>
+    <br>
+    <!-- Main Content -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Dodge_black_logo.svg/480px-Dodge_black_logo.svg.png" alt="Dodge Logo">
+
+    <p>Dodge es una marca estadounidense de automóviles y una división de Stellantis North America, con sede en Auburn Hills, Míchigan. La marca ha sido conocida por sus vehículos de alto rendimiento y una variedad de modelos a lo largo de los años, incluyendo clásicos como el Dodge Charger y el Dodge Challenger.</p>
+
+    <!-- Charger Section -->
+    <div>
+        <h2 id="Charger">Dodge Charger</h2>
+        <ul>
+            <li><b>Fabricante:</b> Dodge</li>
+            <li><b>Período:</b> 1966-1978</li>
+            <li><b>Motor:</b> V8 Big Block 383 de 6.3 litros</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Dodge.383.magnum-black.front.view-sstvwf.JPG/375px-Dodge.383.magnum-black.front.view-sstvwf.JPG" alt="Dodge Charger">
+        <p>El <b>Dodge Charger</b> es un automóvil deportivo de tamaño mediano, producido por el fabricante estadounidense Chrysler y vendido bajo la división Dodge, de 1966 a 1978. Estaba basado en la plataforma "B-body" de Chrysler, la misma que compartía con el Dodge Coronet y con los Plymouth medianos como el Plymouth Satellite y el Belvedere.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hf6G9fJHwPg?si=mvWJsclBXSjqity5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
     <hr>
-<div>
-    <h2 id="Charger">Dodge Charger</h2>
-    <ul>
-    <li><b>Fabricante:</b> Dodge</li>
-    <li><b>Período:</b> 1966-1978</li>
-    <li><b>Motor:</b> V8 Big Block 383 de 6.3 litros</li>
-</ul>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Dodge.383.magnum-black.front.view-sstvwf.JPG/375px-Dodge.383.magnum-black.front.view-sstvwf.JPG" alt="">
-    <p>El <b>Dodge Charger</b> es un automóvil deportivo de tamaño mediano, producido por el fabricante estadounidense Chrysler y vendido bajo la división Dodge, de 1966 a 1978. Estaba basado en la plataforma "B-body" de Chrysler, la misma que compartía con el Dodge Coronet y con los Plymouth medianos como el Plymouth Satellite y el Belvedere.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hf6G9fJHwPg?si=mvWJsclBXSjqity5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>    
-<br>
+
+    <!-- Durango Section -->
+    <div id="Durango">
+        <h2>Catálogo Durango</h2>
+        <embed width="1200" height="1200" src="CATALOGO_DURANGO_2023.pdf" type="application/pdf">
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p><i>Creado por NIMH</i></p>
+    </footer>
+
 </body>
-<label id="Durango" for="CATALOGO_DURANGO_2023"><h3>A continuacion nuestra nueva camioneta</label></h3>
-<br>
-<embed  width="600" height="700" src="CATALOGO_DURANGO_2023.pdf" type="application/pdf">
-    <hr>
-    <footer><i>Creado por NIMH</i></footer>
 </html>
