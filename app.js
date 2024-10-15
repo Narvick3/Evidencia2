@@ -1,1 +1,1 @@
-alert("Favor de contestar correctamente"); 
+alert("Favor de contestar correctamente");  

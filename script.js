@@ -3,7 +3,7 @@ function guardarReserva() {
     const nombre = document.getElementById('nombre').value;
     const correo = document.getElementById('correo').value;
     const telefono = document.getElementById('telefono').value;
-    const fecha = document.getElementById('fecha').value;
+    const fecha = document.getElementById('fecha').value; 
     const hora = document.getElementById('hora').value;
     const numeroPersonas = document.getElementById('numero_personas').value;
     const carro = document.getElementById('carro').value;
